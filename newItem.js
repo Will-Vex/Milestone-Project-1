@@ -6,6 +6,6 @@ function newItem(id,x,y){
     item.xpos = x
     item.ypos = y
     item.id = id
-    document.body.append(item)
+    mainDiv.append(item)
     return item
 }
