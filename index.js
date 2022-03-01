@@ -5,5 +5,6 @@ const playerStats= {
     health: 100,
     maxHP: 100
 }
-const mainDiv = document.getElementById('main')
-console.log(newItem('axe',1,1))
+const mainDiv = document.getElementById('board')
+console.log(newItem('axe',5,6))
+setInterval(display,1);
