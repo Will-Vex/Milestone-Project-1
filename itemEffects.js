@@ -19,3 +19,10 @@ function itemEffects(item){
             }  
     }
 }
+
+//this function will be called when the player steps on a space with an item.
+//Applies the item's effects and then removes the item.
+function pickup(item){
+    itemEffects(item.id)
+    item.remove()
+}
