@@ -2,6 +2,7 @@
  function gameTurn(){
     if(playerTurn == true && direction != null){
         playerAction(direction)
+        direction = null
     }
 }
 setInterval(gameTurn,1)
@@ -31,8 +32,18 @@ function playerAction(direction){
 }
 
 function enemyInRange(direction){
+    let x = false
     for (let i = 1; i < playerStats.range; i++) {
-         
+        switch (direction) {
+            case 'north':
+                if(player.column[player.y - i] == 'enemy')
+                x = true
+                break;
+        
+            default:
+                break;
+        }
         
     }
+    return x
 }

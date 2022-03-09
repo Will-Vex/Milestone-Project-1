@@ -1,13 +1,12 @@
 //creates an item of the specified id, and sets its coordinates 
-async function newItem(id,x,y){
+function newItem(id,x,y){    
     let item = document.createElement('img')
     item.src = ('assets/'+ id + '.png')
-    item.eqipped = false
-    item.xpos = x
-    item.ypos = y
+    item.column = columns[x-1]
+    item.row = rows[y-1]
     item.id = id
     mainDiv.append(item)
-    await positionItem(item,x,y)
+    positionItem(item,x,y)
     return item
 }
 
