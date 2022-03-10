@@ -1,16 +1,16 @@
 let playerTurn = true
+let enemiesSpawned = 0
+const enemies = []
 const playerStats= {
+    score: 0,
+    highScore: 0,
     range: 2,
     attack: 10,
     health: 100,
     maxHP: 100
 }
-const player= {
-    x: 5,
-    y: 5,    
-    row: rows[4],
-    column: columns[4] 
-}
+
 const mainDiv = document.getElementById('board')
-playerCharacter = console.log(newItem('axe',5,6))
+const playerCharacter = newItem('axe',5,6)
+newEnemy()
 setInterval(display,1);

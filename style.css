@@ -16,9 +16,19 @@ footer {
     height: 10vh;
 }
 
-#stats {
+#scorepanel {
+    display: inline-block;
     position: relative;
-    left: 85%;
+    width: 10%;
+    left: 5%;
+    list-style-type: none;
+    text-align: center;
+}
+
+#stats {
+    display: inline-block;
+    position: relative;
+    left: 70%;
     width: 10%;
     text-align: center;
     list-style-type: none;;
@@ -27,7 +37,7 @@ footer {
 #board {
     height: 700px;
     width: 700px;
-    background-color: aquamarine;
+    background-image: url(assets/board.png);
     position: relative;
     justify-content: center;
     align-items: center;
